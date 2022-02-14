@@ -1,0 +1,46 @@
+.article{
+    width:100%;
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    position: relative;
+    margin-left: 10%;
+    width:80%;
+    height:80%;
+    padding-bottom: 3em;
+    white-space: nowrap;
+    justify-content: center;
+}
+.skills_container{
+    min-width: 13em;
+    height: fit-content;
+    position: relative;
+    width:18em;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow : 5px 5px 10px grey;
+    text-align: center;
+    padding: 1em 1em 3em 1em;
+    margin: 2em;
+}
+.title{
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width:900px) {
+    .skills_container{
+        position: relative;
+        width:80%;
+        background-color: white;
+    }
+        
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+}

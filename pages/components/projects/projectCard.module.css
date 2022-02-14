@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.container{
+    background-color: white;
+    border-radius: 4%;
+    position: relative;
+    width:70em;
+    margin : auto;
+    margin-top: 2em;
+    margin-bottom: 10em;
+    padding-bottom: 3em;
+    box-shadow : 5px 5px 10px rgb(36, 35, 35);
+}
+.title{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Do Hyeon','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0.3em;
+    text-align: center;
+}
+.when{
+    font-size : 1.5em;
+    color: rgb(170, 165, 165);
+    font-family: 'Do Hyeon','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0.5em 0 1em 0;
+
+}
+.container2{
+    display: flex;
+}
+.img{
+    margin:1em; 
+}
+.img:hover{
+    animation: magnify 0.2s forwards;
+}
+@keyframes magnify {
+    to{
+        transform: scale(160%) translateY(3em);
+    }    
+}
+.container3{
+    width:50%;
+}
+.text_container{
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3em;
+    width:25em;
+    height:25em;
+    padding: 1em;
+    line-height: 1.2em;
+    height: fit-content;
+}
+.a{
+    color: blue;
+}
+.table{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 1em;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:1175px) {
+    .container2{
+        flex-direction: column;
+    }
+    .container{
+        margin:2em;
+        width:90%
+    }
+    .image{
+        width:100%;
+    }
+    .container3{
+        width:100%;
+    }
+    .text_container{
+        width:100%;
+    }
+}
