@@ -1,8 +1,10 @@
 import React, { memo } from 'react';
 import styles from './title.module.css'
 
-const Title = memo( (props) => (
+const Title = memo((props) => (
     <div className={styles.title}>{props.name}</div>
     ));
 
-export default Title;
+Title.displayName= "title"
+
+    export default Title;

@@ -11,6 +11,7 @@ import PortfolioText from './portfolioText';
 const Projects = () => {
 
     const planDiarySkills = {front:'React',back:'node.js express.js',deployment:''}
+    const portfolioSkills = {front:'React, Next.js', deployment:''}
 
     return (
         <article className={styles.article}>
@@ -27,7 +28,7 @@ const Projects = () => {
                 title='Portfolio'
                 when = '2022.01 ~ 2022.02 (개인 프로젝트)'
                 text={<PortfolioText/>}
-                skills= {planDiarySkills}
+                skills= {portfolioSkills}
                 domain = ''
                 github = 'https://github.com/keeut/portfolio'
                 />
